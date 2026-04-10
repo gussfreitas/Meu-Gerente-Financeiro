@@ -14,7 +14,7 @@ export class User {
   @Column({ type: 'varchar', length: 255 })
   name!: string;
 
-  @Column({ type: 'bigint', nullable: true })
+  @Column({ type: 'bigint', nullable: true, name: 'phone_number' })
   phoneNumber!: bigint | null;
 
   @Column({ type: 'varchar', length: 255, unique: true })
